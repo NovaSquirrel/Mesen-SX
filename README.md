@@ -1,3 +1,7 @@
+# Deprecated
+
+Now that [Mesen2](https://mesen.ca/) exists, this fork has no reason to exist and I suggest using Mesen2 instead.
+
 # Mesen-S
 
 Mesen-S is a cross-platform SNES emulator for Windows & Linux built in C++ and C#.
@@ -22,10 +26,6 @@ Linux: [![Build status](https://github.com/NovaSquirrel/Mesen-S/actions/workflow
 ### Windows / Ubuntu
 
 The latest version is available from the [releases tab on GitHub](https://github.com/SourMesen/Mesen-S/releases).
-
-### Arch Linux
-
-Packages are available here: <https://aur.archlinux.org/packages/mesen-sx-git/>
 
 ## Compiling
 
