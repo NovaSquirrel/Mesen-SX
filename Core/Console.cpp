@@ -405,11 +405,13 @@ bool Console::LoadRom(VirtualFile romFile, VirtualFile patchFile, bool stopRom, 
 		
 		_cart = cart;
 		
-		auto lock = _debuggerLock.AcquireSafe();
-		if(_debugger) {
-			//Reset debugger if it was running before
-			_debugger->Release();
-			_debugger.reset();
+		{
+			auto lock = _debuggerLock.AcquireSafe();
+			if(_debugger) {
+				//Reset debugger if it was running before
+				_debugger->Release();
+				_debugger.reset();
+			}
 		}
 
 		_batteryManager->Initialize(FolderUtilities::GetFilename(romFile.GetFileName(), false));
